@@ -36,4 +36,10 @@ client.on('message', message => {
     }
 });
 
+client.on('participantAdded', async participant => {
+    // Envía un mensaje de bienvenida cuando alguien se une al chat
+    const chat = await participant.getChat();
+    client.sendMessage(chat.id._serialized, '¡Bienvenido! ¿En qué puedo ayudarte?');
+});
+
 client.initialize();
