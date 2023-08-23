@@ -13,6 +13,7 @@ dist-ssr
 *.local
 .wwebjs_auth
 .wwebjs_cache
+bot_sessions
 
 # Editor directories and files
 .vscode/*

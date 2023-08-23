@@ -53,7 +53,7 @@ const flowPrincipal = addKeyword([
 		},
 		async (ctx, { flowDynamic }) => {
 			nombre = ctx.body;
-			return flowDynamic(`Muchas gracias y Hola *${nombre}*! 👋
+			return flowDynamic(`Hola *${nombre}* y Muchas gracias!👋
 			\nAl momento de RETIRAR a *${nombre}* por favor escriba ADIOS 👇👋`);
 		}
 	);
